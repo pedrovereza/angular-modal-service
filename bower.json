@@ -1,0 +1,23 @@
+{
+  "name": "angular-modal-service",
+  "version": "0.0.0",
+  "authors": [
+    "José Alberto Zimermann"
+  ],
+  "description": "This is a simple modal service integrated with bootstrap",
+  "main": "modal-service.js",
+  "keywords": [
+    "modal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.28"
+  }
+}
