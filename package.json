@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jzimermann/angular-modal-service/issues"
   },
-  "homepage": "https://github.com/jzimermann/angular-modal-service"
+  "homepage": "https://github.com/jzimermann/angular-modal-service",
+  "devDependencies": {
+    "karma": "^0.12.31"
+  }
 }
