@@ -9,7 +9,7 @@ angular.module('modal-service', ['$rootScope', '$modal', '$modalStack'])
       modalScope.message = message;
       modalScope.subMessage = subMessage;
       modalScope.yesText = yesText;
-      modalScope.noText;
+      modalScope.noText = noText;
       
       return this.open(modalScope, templateUrl, size); 
     }
