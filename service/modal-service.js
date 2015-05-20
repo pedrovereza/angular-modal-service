@@ -1,9 +1,9 @@
-angular.module('modal-service', ['$rootScope', '$modal', '$modalStack'])
-  .service('modalService', function($rootScope, $modal, $modalStack) {
+angular.module('modal-service', ['ui.bootstrap'])
+  .service('ModalService', function ($modal, $modalStack) {
 
     this.confirm = function (message, subMessage, yesText, noText, templateUrl, size) {
       
-      var modalScope = $rootScope.$new(true);
+      var modalScope = "";
       modalScope.message = message;
       modalScope.subMessage = subMessage;
       modalScope.yesText = yesText;
@@ -16,7 +16,7 @@ angular.module('modal-service', ['$rootScope', '$modal', '$modalStack'])
 
       this.closeAll();
       
-      var modalScope = $rootScope.$new(true);
+      var modalScope = "";
       var modalOptions = $modal.open({
         templateUrl: templateUrl,
         size: size,
@@ -29,5 +29,4 @@ angular.module('modal-service', ['$rootScope', '$modal', '$modalStack'])
     this.closeAll = function () {
       $modalStack.dismissAll();
     }
-
   });
