@@ -20,7 +20,13 @@ describe('ModalService', function () {
       spyOn(modal, 'open').andCallThrough();
       instance.open($scope, 'template.html', 'sm');
       expect(modal.open).toHaveBeenCalled();
-    })
+    });
+
+    it('should close existing modals when opening a new one', function () {
+      spyOn(instance, 'closeAll').andCallThrough();
+      instance.open($scope, 'template.html', 'sm');
+      expect(instance.closeAll).toHaveBeenCalled();
+    });
   });
 
   describe('closeAll', function () {
