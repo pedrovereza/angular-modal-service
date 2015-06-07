@@ -1,6 +1,6 @@
 {
   "name": "angular-modal-service",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "main": "modal-service.js",
   "dependencies": {
     "angular": "^1.2.25",
