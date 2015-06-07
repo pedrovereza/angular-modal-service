@@ -1,6 +1,6 @@
 {
   "name": "angular-modal-service",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "simple AngularJS modal service",
   "main": "modal-service.js",
   "scripts": {
