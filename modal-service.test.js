@@ -14,9 +14,6 @@ describe('ModalService', function () {
     });
   });
 
-  describe('confirm', function () {
-  });
-
   describe('open', function () {
 
     it('should open a modal', function () {
