@@ -20,6 +20,9 @@
   "author": "José Alberto Zimermann",
   "license": "MIT",
   "homepage": "https://github.com/jzimermann/angular-modal-service",
+  "dependencies": {
+    "bower": "^1.4.1"
+  }
   "devDependencies": {
     "karma": "^0.12.9",
     "karma-jasmine": "^0.1.5",
