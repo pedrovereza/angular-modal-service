@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('jzimermann.modal-service', ['ui.bootstrap'])
-.service('ModalService', ['$modalStack', 
-  function ($modalStack) {
+.service('ModalService', ['$rootScope', '$modalStack', '$modal',
+  function ($rootScope, $modalStack, $modal) {
 
   this.confirm = function (message, subMessage, yesText, noText, templateUrl, size) {
-    var modalScope = "";
+    var modalScope = $rootScope.$new(true);
     modalScope.message = message;
     modalScope.subMessage = subMessage;
     modalScope.yesText = yesText;
@@ -15,12 +15,12 @@ angular.module('jzimermann.modal-service', ['ui.bootstrap'])
 
   this.open = function (modalScope, templateUrl, size) {
     this.closeAll();
-    var modalScope = "";
-    var modalOptions = $modal.open({
+    
+    var modalOptions = {
       templateUrl: templateUrl,
       size: size,
       scope: modalScope
-    });
+    };
 
     return $modal.open(modalOptions).result;
   };
